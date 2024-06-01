@@ -70,7 +70,7 @@ async def start():
     chain = qa_bot()
     msg = cl.Message(content="Starting the bot...")
     await msg.send()
-    msg.content = "Hi, Welcome to Medical Bot. What is your query?"
+    msg.content = "A new chat session has started!\nI am movie Recommender, so ask me queries regarding movies."
     await msg.update()
 
     cl.user_session.set("chain", chain)
